@@ -99,3 +99,25 @@
     }
     }
   }
+  @media screen and (min-width: 1200px) {
+    .clients {
+      padding-bottom: 94px;
+      padding-top: 94px;
+      &__header {
+        font-size: 36px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        padding-left: 495px;
+        display: block;
+        width: 201px;
+      }
+      &__item {
+        margin-right: 30px;
+        margin-bottom: 0px;
+        width: 170px;
+      &--sixth {
+        margin-right: 0px;
+      }
+      }
+    }
+  }
