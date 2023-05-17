@@ -207,6 +207,48 @@
                 letter-spacing: 0.06em;
                 cursor: pointer;
             } }
+@media screen and (min-width: 1200px) {
+    .modal {
+    width: 528px;
+    height: 581px;
+    &__button {
+        margin-left: 490px;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        min-width: 448px;
+    } 
+    }
+    .modal-form {
+     &__input {
+        width: 448px;
+     }
+     &__feedback {
+        width: 448px;
+      &:placeholder-shown {
+        font-size: 12px;
+      }  
+     } 
+     &__terms-checkbox {
+        left: 55px;
+     }
+     &__terms-icon {
+        left: 55px;
+     }
+     &__terms-title {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-left: 55px;
+        width: 419px;
+        height: 24px;
+     }
+     &__button {
+        margin: 0px 164px;
+        margin-top: 30px;
+     }
+    }
+}
             
     
     
