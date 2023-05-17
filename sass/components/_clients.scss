@@ -1,0 +1,101 @@
+
+.clients {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  &__block {
+      padding: 0 15px;
+  }
+  &__header {
+    font-family: $primaryFont;
+    font-weight: $fontBold;
+    color: $primaryTextColor;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    width: 314px;
+    margin-left: 68px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 210px;
+  &--second {
+    margin-right: 0px;
+  }
+  &--fourth {
+    margin-right: 0px;
+  }
+  &--fifth {
+    margin-bottom: 0px;
+  }
+  &--sixth {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  }
+  &__logo {
+    padding: 16px 32px;
+    fill: $iconColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+     fill: $fourthBackgroundColor; 
+     transition-property: fill;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border-color: $thirdTextColor;  
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+  }
+  }
+  @media screen and (min-width: 768px) {
+    .clients {
+      &__header {
+      margin-left: 212px;
+    }
+    &__item {
+      width: 226px;
+      &--second {
+        margin-right: 30px;
+      }
+      &--third {
+        margin-right: 0px;
+      }
+      &--fourth {
+        margin-right: 30px;
+        margin-bottom: 0px;
+      }
+    }
+    }
+  }

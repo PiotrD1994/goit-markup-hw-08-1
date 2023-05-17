@@ -1,0 +1,107 @@
+.page-title{
+background-color: $primaryColorBackground;
+margin: auto; 
+}
+.title-field {
+    max-width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/images-mobile/background-mobile.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 118px;
+      padding-bottom: 118px;
+      &__name {
+        color: $fouthTextColor;
+        font-family: $primaryFont;
+        font-weight: $fontLarge;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding-left: 57px;
+        padding-right: 58px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    &__button-container {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+    &__button {
+        background-color: $fourthBackgroundColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: $fouthTextColor;
+        font-family: $primaryFont;
+        font-weight: $fontBold;
+        font-size: 16px;
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        padding: 10px 41px;
+        white-space: nowrap;
+        border: none;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .title-field {
+      background-image: url(../../images/images-mobile/background-mobile@2x.jpg);
+  } }
+@media screen and (min-width: 768px) {
+    .title-field {
+        max-width: 768px;
+        background-image: url(../../images/images-tablet/background-tablet.jpg);
+           &__name {
+            padding-left: 202px;
+            padding-right: 201px;
+                 }
+        &__button-container {
+            padding-left: 284px;
+            padding-right: 284px;
+                }
+               }
+             }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+            .title-field {
+                background-image: url(../../images/images-tablet/background-tablet@2x.jpg   ); 
+           }
+                        } 
+@media screen and (min-width: 1200px) {
+    .title-field {
+        max-width: 1600px;
+        background-image: url(../../images/background.jpg);
+        padding-top: 200px;
+        padding-bottom: 200px;
+      &__name {
+        padding-left: 252px;
+        padding-right: 252px;
+        font-size: 44px;
+        line-height: 1.36;
+        margin-bottom: 40px;
+      }
+      &__button-container {
+        padding-left: 500px;
+        padding-right: 500px;
+      }
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   .title-field {
+    background-image: url(../../images/background@2x.jpg);
+   }
+} 
